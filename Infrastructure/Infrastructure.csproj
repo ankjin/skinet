@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Config\" />
+    <Folder Include="Data\Implementations\" />
     <Folder Include="Data\SeedData\" />
   </ItemGroup>
 
