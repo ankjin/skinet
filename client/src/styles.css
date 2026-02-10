@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+.snack-error {
+    @include mat.snack-bar-overrides((
+        button-color: white,
+        container-color: red,
+        supporting-text-color: white
+    ));
+}
+
+.snack-success {
+    @include mat.snack-bar-overrides((
+        button-color: white,
+        container-color: green,
+        supporting-text-color: white
+    ));
+}
