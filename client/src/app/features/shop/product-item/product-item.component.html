@@ -6,11 +6,7 @@
         <p class="font-light">{{product.price | currency}}</p>
       </mat-card-content>
       <mat-card-actions (click)="$event.stopPropagation()">
-        <!-- 
-         
-         (click)="cartService.addItemToCart(product)"
-        -->
-        <button mat-stroked-button class="w-full shadow">
+        <button mat-stroked-button class="w-full shadow" (click)="cartService.addItemToCart(product)">
           <mat-icon>add_shopping_cart</mat-icon>
           Add to cart
         </button>
